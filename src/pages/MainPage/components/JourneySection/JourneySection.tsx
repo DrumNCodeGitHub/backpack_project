@@ -5,7 +5,7 @@ import journey2 from "../../../../images/journey_2.png";
 
 export const JourneySection: React.FC = () => {
   return (
-    <section className="JourneySection">
+    <section className="JourneySection" id="journey">
       <div className="grey-square"></div>
       <div className="journey-content">
         <div className="image-content">

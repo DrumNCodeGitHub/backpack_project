@@ -2,11 +2,7 @@ import React from "react";
 import "./Header.scss";
 import { MainSection } from "./MainSection/MainSection";
 
-type Props = {
-  activePage: string;
-};
-
-export const Header: React.FC<Props> = ({ activePage }) => {
+export const Header: React.FC = () => {
   return (
     <header className="Header">
       <MainSection />

@@ -1,3 +1,9 @@
+@mixin for-phone-only {
+  @media (max-width: 440px) {
+    @content;
+  }
+}
+
 .FooterForm {
   margin-bottom: 80px;
   display: flex;
@@ -6,17 +12,31 @@
   align-items: center;
   color: white;
 
+  @include for-phone-only {
+    margin-bottom: 48px;
+  }
+
   .form {
     margin-bottom: 56px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    @include for-phone-only {
+      margin-bottom: 32px;
+    }
+
     &-title {
       margin-top: 0;
       margin-bottom: 12px;
       font-size: 48px;
       font-weight: bold;
+
+      @include for-phone-only {
+        font-size: 32px;
+      }
     }
 
     &-text {
@@ -24,6 +44,11 @@
       margin-top: 0;
       font-size: 24px;
       max-width: 65%;
+
+      @include for-phone-only {
+        font-size: 16px;
+        max-width: 100%;
+      }
     }
   }
 
@@ -33,6 +58,11 @@
     align-items: center;
     width: 80%;
 
+    @include for-phone-only {
+      width: 100%;
+      flex-direction: column;
+    }
+
     input {
       width: 400px;
       padding: 16px 32px;
@@ -40,6 +70,13 @@
       border-radius: 100px;
       border: none;
       font-size: 20px;
+
+      @include for-phone-only {
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding: 12px 24px;
+      }
     }
 
     button {
@@ -53,6 +90,11 @@
 
       &:hover {
         background-color: var(--green-600);
+      }
+
+      @include for-phone-only {
+        width: 100%;
+        margin-top: 16px;
       }
     }
   }

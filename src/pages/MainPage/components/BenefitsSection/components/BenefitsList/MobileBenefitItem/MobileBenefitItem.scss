@@ -1,0 +1,60 @@
+.MobileBenefitItem {
+  display: flex;
+  gap: 16px;
+  height: 44px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
+  &.open {
+    height: 100%;
+    overflow: visible;
+  }
+
+  .icon-holder {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--grey-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      padding: 4px;
+    }
+  }
+
+  .group {
+    position: relative;
+  }
+
+  .dotted-line {
+    position: absolute;
+    top: 90px;
+    margin-left: 15px;
+    transform: scale(2);
+    z-index: -1;
+  }
+
+  .text-content {
+    color: black;
+
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .benefit-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .benefit-text {
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+}

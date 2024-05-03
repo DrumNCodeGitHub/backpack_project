@@ -4,12 +4,29 @@
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 12px;
+
+    @include for-phone-only {
+      margin-bottom: 8px;
+    }
   }
 
   &-item {
     margin-bottom: 12px;
     font-size: 14px;
-    color: var(--grey-900);
+
+    a {
+      color: var(--grey-900);
+    }
+
+    @include for-phone-only {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 440px) {
+    @content;
   }
 }
 
@@ -21,8 +38,17 @@
   border-radius: 16px;
   background-color: white;
 
+  @include for-phone-only {
+    flex-direction: column;
+    gap: 16px;
+  }
+
   & > div {
     width: 40%;
+
+    @include for-phone-only {
+      width: 80%;
+    }
   }
 
   .backpack-info {
@@ -31,6 +57,10 @@
       font-weight: 500;
       margin-top: 0;
       margin-bottom: 12px;
+
+      @include for-phone-only {
+        margin-bottom: 8px;
+      }
     }
 
     &-text {

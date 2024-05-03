@@ -1,5 +1,15 @@
+@mixin for-phone-only {
+  @media (max-width: 440px) {
+    @content;
+  }
+}
+
 .Footer {
   padding: 88px 160px 40px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include for-phone-only {
+    padding: 64px 16px 40px;
+  }
 }

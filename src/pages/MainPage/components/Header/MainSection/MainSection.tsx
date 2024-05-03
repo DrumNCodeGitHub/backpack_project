@@ -3,24 +3,11 @@ import "./MainSection.scss";
 import main from "../../../../../images/main_page_image.png";
 import line from "../../../../../images/svg/line.svg";
 import backpack from "../../../../../images/main_backpack.png";
-import photo1 from "../../../../../images/traveler_photo_1.png";
-import photo2 from "../../../../../images/traveler_photo_2.png";
-import photo3 from "../../../../../images/traveler_photo_3.png";
-import photo4 from "../../../../../images/traveler_photo_4.png";
-import photo5 from "../../../../../images/traveler_photo_5.png";
-import photo6 from "../../../../../images/traveler_photo_6.png";
+import { TravelersCard } from "./TravelersCard/TravelersCard";
 
 export const MainSection: React.FC = () => {
-  const happyTravelersImages: string[] = [
-    photo1,
-    photo2,
-    photo3,
-    photo4,
-    photo5,
-    photo6,
-  ];
   return (
-    <main className="MainSection">
+    <main className="MainSection" id="home">
       <div className="title-area">
         <div className="message">Eco-Friendly</div>
         <h1 className="title">Explore</h1>
@@ -33,24 +20,16 @@ export const MainSection: React.FC = () => {
         <div className="image-div">
           <img className="main-image" src={main} alt="Traveler" />
         </div>
+        <div className="mobile-card">
+          <TravelersCard />
+        </div>
       </div>
       <div className="image-area">
         <img className="backpack" src={backpack} alt="Backpack" />
         <div className="filled-circle"></div>
         <div className="empty-circle"></div>
-        <div className="travelers-card">
-          {happyTravelersImages.map((image) => (
-            <img
-              className="happy-traveler-image"
-              key={image}
-              src={image}
-              alt="happy traveler"
-            />
-          ))}
-          <div className="travelers-text">
-            <h2 className="travelers-amount">100+</h2>
-            <p>Happy Travelers</p>
-          </div>
+        <div className="laptop-card">
+          <TravelersCard />
         </div>
         <div className="line">
           <img src={line} alt="Traveler" />

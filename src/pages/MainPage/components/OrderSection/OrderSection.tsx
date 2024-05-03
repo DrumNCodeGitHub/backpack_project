@@ -35,7 +35,7 @@ export const OrderSection: React.FC<Props> = ({
   const numStars = 4.5;
 
   return (
-    <section className="OrderSection">
+    <section className="OrderSection" id="product">
       <h2 className="order-title">Choose and order right now</h2>
       <div className="photo-section">
         <figure className="big-image">

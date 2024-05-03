@@ -7,17 +7,13 @@ import { OrderSection } from "./components/OrderSection/OrderSection";
 import { StoriesSection } from "./components/StoriesSection/StoriesSection";
 import { Footer } from "./components/Footer/Footer";
 
-type Props = {
-  activePage: string;
-};
-
-export const MainPage: React.FC<Props> = ({ activePage }) => {
+export const MainPage: React.FC = () => {
   const [activeColor, setActiveColor] = useState("#FFDE30");
   return (
     <div className="MainPage">
       <div className="ellipse"></div>
       <div className="circle"></div>
-      <Header activePage={activePage} />
+      <Header />
       <JourneySection />
       <BenefitsSection />
       <OrderSection activeColor={activeColor} onColorChange={setActiveColor} />

@@ -7,7 +7,7 @@ import reviewPhoto3 from "../../../../images/review_photo_3.png";
 
 export const StoriesSection: React.FC = () => {
   return (
-    <section className="StoriesSection">
+    <section className="StoriesSection" id="reviews">
       <div className="story">
         <h2 className="story-title">Real Stories</h2>
         <p className="story-text">

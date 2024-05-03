@@ -1,0 +1,54 @@
+@mixin for-phone-only {
+  @media (max-width: 440px) {
+    @content;
+  }
+}
+
+.travelers-card {
+  z-index: -1;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: var(--green-300);
+  width: 330px;
+  box-shadow: var(--box-shadow);
+  margin-top: -70px;
+  margin-left: -50px;
+  box-sizing: border-box;
+  border: 1px solid white;
+
+  @include for-phone-only {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .happy-traveler-image {
+    height: 32px;
+    width: 32px;
+    margin: -4px;
+    transition: tranform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .travelers-text {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    font-size: 20px;
+    color: white;
+
+    p {
+      margin: 0 0 10px 0;
+    }
+
+    .travelers-amount {
+      margin: 0;
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
