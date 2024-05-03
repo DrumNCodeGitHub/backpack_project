@@ -1,0 +1,26 @@
+.MainPage {
+  position: relative;
+  width: 100%;
+}
+
+.ellipse {
+  position: absolute;
+  width: 422px;
+  height: 574px;
+  border-radius: 50%;
+  border: 1px solid var(--grey-600);
+  top: -390px;
+  left: -135px;
+  z-index: -1;
+}
+
+.circle {
+  position: absolute;
+  width: 576px;
+  height: 576px;
+  border-radius: 50%;
+  border: 1px solid var(--grey-600);
+  top: -410px;
+  left: -170px;
+  z-index: -1;
+}

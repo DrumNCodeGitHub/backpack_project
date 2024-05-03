@@ -1,0 +1,37 @@
+:root {
+  --grey-50: #f8f8f9;
+  --grey-100: #e9eaeb;
+  --grey-200: #dee0e2;
+  --grey-300: #cfd1d5;
+  --grey-400: #c5c9cd;
+  --grey-500: #b7bbc0;
+  --grey-600: #a7aaaf;
+  --grey-700: #828588;
+  --grey-800: #65676a;
+  --grey-900: #4d4f51;
+
+  --green-50: #e8f2ec;
+  --green-100: #b7d8c3;
+  --green-200: #94c5a6;
+  --green-300: #63aa7d;
+  --green-400: #459964;
+  --green-500: #16803d;
+  --green-600: #147438;
+  --green-700: #105b2b;
+  --green-800: #0c4622;
+  --green-900: #09361a;
+
+  --box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.16);
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
