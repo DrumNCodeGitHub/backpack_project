@@ -22,6 +22,11 @@ and
 It will run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Why React with Typescript and SCSS
+1. React allows us to use reusable components and break down huge files with elements
+2. Typescript provides useful functionality to avoid unnecessary errors
+3. SCSS is beneficial for block styling, reusable styles and nesting
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
