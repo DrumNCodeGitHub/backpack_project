@@ -5,14 +5,14 @@
 }
 
 .JourneySection {
-  overflow: hidden;
-  padding: 0 98px 0 160px;
+  padding: 0 98px 104px 160px;
   margin-bottom: 104px;
   position: relative;
 
   @include for-phone-only {
-    padding: 64px 16px 0 16px;
-    margin-bottom: 80px;
+    padding: 64px 16px 80px 16px;
+    margin-bottom: 0;
+    overflow: hidden;
   }
 
   .grey-square {
