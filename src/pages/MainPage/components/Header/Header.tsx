@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.scss";
-import { NavBar } from "./NavBar/NavBar";
 import { MainSection } from "./MainSection/MainSection";
 
 type Props = {

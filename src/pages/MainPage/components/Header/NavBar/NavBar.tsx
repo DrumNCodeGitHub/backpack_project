@@ -32,7 +32,7 @@ export const NavBar: React.FC<Props> = ({ activePage, onPageChange }) => {
         <a href="#home">Backpack</a>
       </div>
       <ul className="nav-links">
-      {navLinksList.map((item) => (
+        {navLinksList.map((item) => (
           <li
             className={"nav-item " + (activePage === item.id ? "active" : "")}
             key={item.id}

@@ -86,7 +86,7 @@ export const OrderSection: React.FC<Props> = ({
             <div className="product-quantity">
               <button
                 onClick={() => setAmount(amount - 1)}
-                disabled={amount === 0}
+                disabled={amount === 1}
                 className="button minus-button"
               >
                 -

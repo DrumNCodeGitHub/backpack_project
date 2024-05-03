@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MainPage } from "./pages/MainPage/MainPage";
-import {NavBar} from "./pages/MainPage/components/Header/NavBar/NavBar";
+import { NavBar } from "./pages/MainPage/components/Header/NavBar/NavBar";
 
 function App() {
   const [activePage, setActivePage] = useState("home");
