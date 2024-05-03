@@ -10,7 +10,6 @@ type Props = {
 export const Header: React.FC<Props> = ({ activePage }) => {
   return (
     <header className="Header">
-      <NavBar activePage={activePage} />
       <MainSection />
     </header>
   );
